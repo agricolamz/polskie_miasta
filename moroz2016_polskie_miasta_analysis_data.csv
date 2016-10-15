@@ -1,129 +1,121 @@
 town.names,lat,long,query,ludnosc_(31.12.2014)
-Warszawa,52.232222,21.008333,[base = 'warszawa'],1735442
-Kraków,50.061389,19.938333,[base = 'Kraków'],761873
-Łódź,51.776667,19.454722,[base = 'Łódź'],706004
-Wrocław,51.11,17.022222,[base = 'Wrocław'],634487
-Poznań,52.408333,16.934167,[base = 'Poznań'],545680
-Gdańsk,54.3475,18.645278,[base = 'Gdańsk'],461489
-Szczecin,53.438056,14.542222,[base = 'Szczecin'],407180
-Bydgoszcz,53.125,18.011111,[base = 'Bydgoszcz'],357652
-Lublin,51.248056,22.570278,[base = 'lublin'],341722
-Katowice,50.264167,19.023611,[base = 'Katowice'],301834
-Białystok,53.135278,23.145556,[base = 'Białystok'],295459
-Gdynia,54.519167,18.539444,[base = 'Gdynia'],247820
-Częstochowa,50.817778,19.138333,[base = 'Częstochowa'],230123
-Radom,51.403611,21.156667,[base = 'Radom'],217201
-Sosnowiec,50.276667,19.139444,[base = 'Sosnowiec'],209274
-Toruń,53.022222,18.611111,[base = 'Toruń'],203158
-Kielce,50.874167,20.633333,[base = 'Kielce'],198857
-Rzeszów,50.033611,22.004722,[base = 'Rzeszów'],185123
-Gliwice,50.292222,18.6675,[base = 'Gliwice'],184415
-Zabrze,50.3025,18.778056,[base = 'Zabrze'],177188
-Olsztyn,53.773056,20.476111,[base = 'Olsztyn'],173831
-Bielsko-Biała,49.8225,19.044444,[base = 'Bielsko'] [base = 'Biała'],173013
-Bytom,50.348333,18.915556,[base = 'Bytom'],172306
-Ruda Śląska,50.262778,18.853611,[base = 'rudy' & orth = 'Rud.*'] [base = 'Śląsk'],140669
-Rybnik,50.098611,18.545,[base = 'rybnik'],140052
-Zielona Góra,51.939722,15.505,[base = 'zielony'] [base = 'Góra'],138512
-Tychy,50.123611,18.986667,[base = 'Tychy'],128621
-Gorzów Wielkopolski,52.730833,15.238333,[base = 'Gorzów'] [base = 'wielkopolski'],124145
-Dąbrowa Górnicza,50.321389,19.187222,[base = 'dąbrowa'] [base = 'górniczy'],123376
-Elbląg,54.158333,19.402778,[base = 'Elbląg'],122368
-Płock,52.547222,19.7,[base = 'Płock'],122224
-Opole,50.664722,17.926944,[base = 'opole'],119574
-Wałbrzych,50.770833,16.273889,[base = 'Wałbrzych'],116691
-Włocławek,52.660833,19.068611,[base = 'Włocławek'],113939
-Tarnów,50.029167,20.971667,[base = 'Tarnów'],111376
-Chorzów,50.3,18.95,[base = 'Chorzów'],110337
-Koszalin,54.190278,16.181667,[base = 'Koszalin'],108605
-Kalisz,51.7625,18.089722,[base = 'Kalisz'],103373
-Legnica,51.205278,16.156389,[base = 'Legnica'],101343
-Grudziądz,53.486944,18.756944,[base = 'Grudziądz'],97176
-Jaworzno,50.204444,19.27,[base = 'Jaworzno'],93331
-Słupsk,54.465833,17.029167,[base = 'Słupsk'],93206
-Jastrzębie-Zdrój,49.950278,18.575278,[base = 'jastrząb'] [base = 'zdrój'],90794
-Nowy Sącz,49.625,20.695556,[base = 'nowy'] [base = 'sącz'],83853
-Jelenia Góra,50.903889,15.736389,[base = 'jeleni'] [base = 'góra'],81408
-Siedlce,52.166667,22.275,[base = 'Siedlce'],76603
-Konin,52.2275,18.261389,[orth = 'Konin.*' & base = 'konina'],76547
-Piotrków Trybunalski,51.406667,19.695556,[base = 'Piotrek'] [base = 'trybunalski'],75608
-Mysłowice,50.241389,19.136667,[base = 'Mysłowice'],75037
-Inowrocław,52.795833,18.261111,[base = 'Inowrocław'],74564
-Piła,53.1475,16.730833,[orth = 'Pił.*' & base = 'piła'],74333
-Lubin,51.3975,16.209444,[base = 'Lubin'],73658
-Ostrów Wielkopolski,51.654722,17.807222,[base = 'ostrowa'] [base = 'wielkopolski'],72754
-Ostrowiec Świętokrzyski,50.9325,21.386111,[base = 'Ostrowiec'] [base = 'świętokrzyski'],71728
-Gniezno,52.545,17.603611,[base = 'Gniezno'],69686
-Suwałki,54.101111,22.9325,[base = 'Suwałki'],69316
-Stargard,53.3375,15.037778,[base = 'Stargard'],68922
-Głogów,51.659167,16.080556,[base = 'Głogów'],68836
-Siemianowice Śląskie,50.326944,19.030556,[base = 'Siemianowice'] [base = 'śląski'],68634
-Pabianice,51.664444,19.355556,[base = 'Pabianice'],67207
-Zamość,50.720556,23.258611,[base = 'Zamość'],65055
-Chełm,51.132222,23.477778,[base = 'Chełm'],64855
-Leszno,51.845833,16.580556,[base = 'Leszno'],64616
-Tomaszów Mazowiecki,51.531389,20.008889,[base = 'Tomaszów'] [base = 'Mazowiecki'],64513
-Przemyśl,49.782222,22.774444,[base = 'Przemyśl'],63441
-Stalowa Wola,50.576111,22.061111,[base = 'stalowa'] [base = 'wola'],63291
-Kędzierzyn-Koźle,50.344722,18.208611,[base = 'Kędzierzyn'] [base = 'kozioł'],62840
-Łomża,53.176389,22.073056,[base = 'Łomża'],62779
-Żory,50.045556,18.694722,[base = 'Żory'],62051
-Tarnowskie Góry,50.445556,18.861111,[base = 'Tarnowskie'] [base = 'góra'],60879
-Mielec,50.291667,21.433333,[base = 'mielec'],60827
-Tczew,54.092192,18.777331,[base = 'Tczew'],60573
-Ełk,53.821389,22.362222,[base = 'Ełk'],60103
-Pruszków,52.165556,20.805556,[base = 'Pruszków'],60068
-Bełchatów,51.363611,19.362222,[base = 'Bełchatów'],59305
-Świdnica,50.844444,16.491667,[base = 'Świdnica'],58802
 Będzin,50.323889,19.129167,[base = 'Będzin'],58205
+Bełchatów,51.363611,19.362222,[base = 'Bełchatów'],59305
 Biała Podlaska,52.033333,23.116667,[base = 'Biała'] [base = 'podlaski'],57471
-Zgierz,51.8551,19.406086,[base = 'Zgierz'],57390
-Piekary Śląskie,50.373611,18.943889,[base = 'Piekary'] [base = 'śląski'],56755
-Racibórz,50.091944,18.219722,[base = 'Racibórz'],55710
-Legionowo,52.406667,20.934722,[base = 'Legionowo'],54272
-Ostrołęka,52.406667,20.934722,[base = 'ostrołęka'],52611
-Świętochłowice,50.291944,18.917778,[base = 'Świętochłowice'],51494
-Zawiercie,50.4875,19.416389,[base = 'Zawiercie'],50990
-Starachowice,51.036667,21.070833,[base = 'Starachowice'],50679
-Wejherowo,54.604167,18.248889,[base = 'Wejherowo'],50292
-Puławy,51.416389,21.969167,[base = 'Puławy'],48864
-Wodzisław Śląski,50,18.45,[base = 'Wodzisław'] [base = 'śląski'],48864
-Skierniewice,53.963889,18.526389,[base = 'Skierniewice'],48660
-Starogard Gdański,50.572778,21.678611,[base = 'Starogard'] [base = 'Gdańsk'],48327
-Tarnobrzeg,50.572778,21.678611,[base = 'Tarnobrzeg'],48000
-Rumia,54.570556,18.387778,[base = 'Rumia'],47602
-Skarżysko-Kamienna,51.116389,20.866944,[base = 'Skarżysko'] [base = 'kamienny'],47212
-Krosno,49.682222,21.765833,[base = 'krosno'],46934
-Kołobrzeg,54.177778,15.576944,[base = 'Kołobrzeg'],46720
-Dębica,50.051389,21.411667,[base = 'Dębica'],46568
-Piaseczno,52.075556,21.026389,[base = 'Piaseczno'],45567
-Kutno,52.231061,19.364342,[base = 'Kutno'],45371
-Otwock,52.106111,21.265833,[base = 'Otwock'],45025
-Nysa,50.471636,17.334111,[orth = 'Nys.*' & base = 'nysa'],44775
-Ciechanów,52.881667,20.610556,[base = 'Ciechanów'],44585
-Zduńska Wola,51.606111,18.939167,[base = 'zduński'] [base = 'wola'],43310
-Sieradz,51.595278,18.730556,[base = 'Sieradz'],43071
-Świnoujście,53.907778,14.2475,[base = 'Świnoujście'],41276
-Żyrardów,52.054167,20.444444,[base = 'Żyrardów'],41003
-Szczecinek,53.720833,16.686111,[base = 'Szczecinek'],40535
-Mińsk Mazowiecki,52.180556,21.558333,[base = 'Mińsk'] [base = 'Mazowiecki'],40211
-Świdnik,51.219722,22.7,[base = 'Świdnik'],40078
-Chojnice,53.694167,17.556389,[base = 'Chojnice'],40056
-Mikołów,50.163611,18.903889,[base = 'Mikołów'],39795
-Nowa Sól,51.805833,15.716111,[orth = 'Now.*' & base = 'nowy'] [orth = 'S[óo]{1}l.*' & base = 'sól'],39571
+Białystok,53.135278,23.145556,[base = 'Białystok'],295459
+Bielsko-Biała,49.8225,19.044444,[base = 'Bielsko'] [base = 'Biała'],173013
 Bolesławiec,51.263889,15.560833,[base = 'Bolesławiec'],39464
-Oświęcim,50.039167,19.220833,[base = 'Oświęcim'],39444
-Malbork,54.035,19.028056,[base = 'Malbork'],38950
-Sanok,49.558333,22.205556,[base = 'Sanok'],38818
-Kwidzyn,53.735833,18.930833,[base = 'Kwidzyn'],38757
-Żary,51.636667,15.136667,[orth = 'Żar.*' & base = 'żar' & number=pl],38527
-Sopot,54.441944,18.559722,[base = 'Sopot'],37654
-Wołomin,52.346667,21.241944,[base = 'Wołomin'],37389
-Oleśnica,51.212778,17.383056,[base = 'Oleśnica'],37355
-Sochaczew,52.227778,20.241667,[base = 'Sochaczew'],37201
 Brzeg,50.860278,17.467222,[orth = 'Brzeg.*' & base = 'brzeg'],36675
-Olkusz,50.279167,19.559722,[base = 'Olkusz'],36477
-Jasło,49.747778,21.471389,[orth = 'Jasł.*' & base = 'jasło'],36260
+Bydgoszcz,53.125,18.011111,[base = 'Bydgoszcz'],357652
+Bytom,50.348333,18.915556,[base = 'Bytom'],172306
+Chełm,51.132222,23.477778,[base = 'Chełm'],64855
+Chojnice,53.694167,17.556389,[base = 'Chojnice'],40056
+Ciechanów,52.881667,20.610556,[base = 'Ciechanów'],44585
 Cieszyn,49.75,18.633333,[base = 'Cieszyn'],35685
 Czechowice-Dziedzice,49.911331,19.0075,[base = 'Czechowice'] [base = 'dziedzic'],35632
+Częstochowa,50.817778,19.138333,[base = 'Częstochowa'],230123
+Dąbrowa Górnicza,50.321389,19.187222,[base = 'dąbrowa'] [base = 'górniczy'],123376
+Dębica,50.051389,21.411667,[base = 'Dębica'],46568
+Elbląg,54.158333,19.402778,[base = 'Elbląg'],122368
+Ełk,53.821389,22.362222,[base = 'Ełk'],60103
+Gdańsk,54.3475,18.645278,[base = 'Gdańsk'],461489
+Gdynia,54.519167,18.539444,[base = 'Gdynia'],247820
+Gliwice,50.292222,18.6675,[base = 'Gliwice'],184415
+Głogów,51.659167,16.080556,[base = 'Głogów'],68836
+Gniezno,52.545,17.603611,[base = 'Gniezno'],69686
+Gorzów Wielkopolski,52.730833,15.238333,[base = 'Gorzów'] [base = 'wielkopolski'],124145
+Grudziądz,53.486944,18.756944,[base = 'Grudziądz'],97176
+Inowrocław,52.795833,18.261111,[base = 'Inowrocław'],74564
+Jasło,49.747778,21.471389,[orth = 'Jasł.*' & base = 'jasło'],36260
+Jaworzno,50.204444,19.27,[base = 'Jaworzno'],93331
+Jelenia Góra,50.903889,15.736389,[base = 'jeleni'] [base = 'góra'],81408
+Katowice,50.264167,19.023611,[base = 'Katowice'],301834
+Kędzierzyn-Koźle,50.344722,18.208611,[base = 'Kędzierzyn'] [base = 'kozioł'],62840
+Kielce,50.874167,20.633333,[base = 'Kielce'],198857
+Kołobrzeg,54.177778,15.576944,[base = 'Kołobrzeg'],46720
+Konin,52.2275,18.261389,[orth = 'Konin.*' & base = 'konina'],76547
+Koszalin,54.190278,16.181667,[base = 'Koszalin'],108605
+Kraków,50.061389,19.938333,[base = 'Kraków'],761873
 Kraśnik,50.921389,22.220833,[orth = 'Kraśnik.*' & base = 'kraśnik'],35508
+Krosno,49.682222,21.765833,[base = 'krosno'],46934
+Kutno,52.231061,19.364342,[base = 'Kutno'],45371
+Kwidzyn,53.735833,18.930833,[base = 'Kwidzyn'],38757
+Legionowo,52.406667,20.934722,[base = 'Legionowo'],54272
+Legnica,51.205278,16.156389,[base = 'Legnica'],101343
+Leszno,51.845833,16.580556,[base = 'Leszno'],64616
+Łódź,51.776667,19.454722,[base = 'Łódź'],706004
+Łomża,53.176389,22.073056,[base = 'Łomża'],62779
+Lublin,51.248056,22.570278,[base = 'Lubin'],341722
+Malbork,54.035,19.028056,[base = 'Malbork'],38950
+Mielec,50.291667,21.433333,[base = 'mielec'],60827
+Mikołów,50.163611,18.903889,[base = 'Mikołów'],39795
+Mińsk Mazowiecki,52.180556,21.558333,[base = 'Mińsk'] [base = 'Mazowiecki'],40211
+Mysłowice,50.241389,19.136667,[base = 'Mysłowice'],75037
+Nysa,50.471636,17.334111,[orth = 'Nys.*' & base = 'nysa'],44775
+Oleśnica,51.212778,17.383056,[base = 'Oleśnica'],37355
+Olkusz,50.279167,19.559722,[base = 'Olkusz'],36477
+Olsztyn,53.773056,20.476111,[base = 'Olsztyn'],173831
+Opole,50.664722,17.926944,[base = 'opole'],119574
+Ostrołęka,52.406667,20.934722,[base = 'ostrołęka'],52611
+Ostrów Wielkopolski,51.654722,17.807222,[base = 'ostrowa'] [base = 'wielkopolski'],72754
+Ostrowiec Świętokrzyski,50.9325,21.386111,[base = 'Ostrowiec'] [base = 'świętokrzyski'],71728
+Oświęcim,50.039167,19.220833,[base = 'Oświęcim'],39444
+Otwock,52.106111,21.265833,[base = 'Otwock'],45025
+Pabianice,51.664444,19.355556,[base = 'Pabianice'],67207
+Piaseczno,52.075556,21.026389,[base = 'Piaseczno'],45567
+Piekary Śląskie,50.373611,18.943889,[base = 'Piekary'] [base = 'śląski'],56755
+Piła,53.1475,16.730833,[orth = 'Pił.*' & base = 'piła'],74333
+Piotrków Trybunalski,51.406667,19.695556,[base = 'Piotrek'] [base = 'trybunalski'],75608
+Płock,52.547222,19.7,[base = 'Płock'],122224
+Poznań,52.408333,16.934167,[base = 'Poznań'],545680
+Pruszków,52.165556,20.805556,[base = 'Pruszków'],60068
+Przemyśl,49.782222,22.774444,[base = 'Przemyśl'],63441
+Puławy,51.416389,21.969167,[base = 'Puławy'],48864
+Racibórz,50.091944,18.219722,[base = 'Racibórz'],55710
+Radom,51.403611,21.156667,[base = 'Radom'],217201
+Ruda Śląska,50.262778,18.853611,[base = 'rudy' & orth = 'Rud.*'] [base = 'Śląsk'],140669
+Rumia,54.570556,18.387778,[base = 'Rumia'],47602
+Rybnik,50.098611,18.545,[base = 'rybnik'],140052
+Rzeszów,50.033611,22.004722,[base = 'Rzeszów'],185123
+Sanok,49.558333,22.205556,[base = 'Sanok'],38818
+Siedlce,52.166667,22.275,[base = 'Siedlce'],76603
+Siemianowice Śląskie,50.326944,19.030556,[base = 'Siemianowice'] [base = 'śląski'],68634
+Sieradz,51.595278,18.730556,[base = 'Sieradz'],43071
+Skarżysko-Kamienna,51.116389,20.866944,[base = 'Skarżysko'] [base = 'kamienny'],47212
+Skierniewice,53.963889,18.526389,[base = 'Skierniewice'],48660
+Słupsk,54.465833,17.029167,[base = 'Słupsk'],93206
+Sochaczew,52.227778,20.241667,[base = 'Sochaczew'],37201
+Sopot,54.441944,18.559722,[base = 'Sopot'],37654
+Sosnowiec,50.276667,19.139444,[base = 'Sosnowiec'],209274
+Starachowice,51.036667,21.070833,[base = 'Starachowice'],50679
+Stargard,53.3375,15.037778,[base = 'Stargard'],68922
+Starogard Gdański,50.572778,21.678611,[base = 'Starogard'] [base = 'Gdańsk'],48327
+Suwałki,54.101111,22.9325,[base = 'Suwałki'],69316
+Świdnica,50.844444,16.491667,[base = 'Świdnica'],58802
+Świdnik,51.219722,22.7,[base = 'Świdnik'],40078
+Świnoujście,53.907778,14.2475,[base = 'Świnoujście'],41276
+Szczecin,53.438056,14.542222,[base = 'Szczecin'],407180
+Szczecinek,53.720833,16.686111,[base = 'Szczecinek'],40535
+Tarnobrzeg,50.572778,21.678611,[base = 'Tarnobrzeg'],48000
+Tarnów,50.029167,20.971667,[base = 'Tarnów'],111376
+Tarnowskie Góry,50.445556,18.861111,[base = 'Tarnowskie'] [base = 'góra'],60879
+Tczew,54.092192,18.777331,[base = 'Tczew'],60573
+Tomaszów Mazowiecki,51.531389,20.008889,[base = 'Tomaszów'] [base = 'Mazowiecki'],64513
+Toruń,53.022222,18.611111,[base = 'Toruń'],203158
+Tychy,50.123611,18.986667,[base = 'Tychy'],128621
+Wałbrzych,50.770833,16.273889,[base = 'Wałbrzych'],116691
+Warszawa,52.232222,21.008333,[base = 'warszawa'],1735442
+Wejherowo,54.604167,18.248889,[base = 'Wejherowo'],50292
+Włocławek,52.660833,19.068611,[base = 'Włocławek'],113939
+Wodzisław Śląski,50,18.45,[base = 'Wodzisław'] [base = 'śląski'],48864
+Wołomin,52.346667,21.241944,[base = 'Wołomin'],37389
+Wrocław,51.11,17.022222,[base = 'Wrocław'],634487
+Zabrze,50.3025,18.778056,[base = 'Zabrze'],177188
+Zamość,50.720556,23.258611,[base = 'Zamość'],65055
+Żary,51.636667,15.136667,[orth = 'Żar.*' & base = 'żar' & number=pl],38527
+Zawiercie,50.4875,19.416389,[base = 'Zawiercie'],50990
+Zduńska Wola,51.606111,18.939167,[base = 'zduński'] [base = 'wola'],43310
+Zgierz,51.8551,19.406086,[base = 'Zgierz'],57390
+Zielona Góra,51.939722,15.505,[base = 'zielony'] [base = 'Góra'],138512
+Żory,50.045556,18.694722,[base = 'Żory'],62051
+Żyrardów,52.054167,20.444444,[base = 'Żyrardów'],41003
