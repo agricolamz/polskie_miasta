@@ -1,4 +1,4 @@
-town.names,long,lat,query,ludnosc_(31.12.2014)
+town.names,lat,long,query,ludnosc_(31.12.2014)
 Warszawa,52.232222,21.008333,[base = 'warszawa'],1735442
 Kraków,50.061389,19.938333,[base = 'Kraków'],761873
 Łódź,51.776667,19.454722,[base = 'Łódź'],706004
