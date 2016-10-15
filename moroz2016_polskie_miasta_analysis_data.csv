@@ -22,7 +22,7 @@ Zabrze,50.3025,18.778056,[base = 'Zabrze'],177188
 Olsztyn,53.773056,20.476111,[base = 'Olsztyn'],173831
 Bielsko-Biała,49.8225,19.044444,[base = 'Bielsko'] [base = 'Biała'],173013
 Bytom,50.348333,18.915556,[base = 'Bytom'],172306
-Ruda Śląska,50.262778,18.853611,[base = 'rudy'] [orth = 'Śląska'],140669
+Ruda Śląska,50.262778,18.853611,[base = 'rudy' & orth = 'Rud.*'] [base = 'Śląsk'],140669
 Rybnik,50.098611,18.545,[base = 'rybnik'],140052
 Zielona Góra,51.939722,15.505,[base = 'zielony'] [base = 'Góra'],138512
 Tychy,50.123611,18.986667,[base = 'Tychy'],128621
