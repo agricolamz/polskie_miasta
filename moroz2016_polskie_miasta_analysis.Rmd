@@ -1,0 +1,115 @@
+---
+title: "Лингвистические пакеты в R: падежные предпочтения польских городов"
+author: "Г. Мороз"
+output: html_notebook
+---
+
+### 0. Введение
+[Национальный корпус польского языка](http://nkjp.pl/poliqarp/) --- вещь достаточно неудобная. Настройки в одном месте, выдача в другом, скачать можно только в html (хотя обещают, что можно и в Excel). Как было славно, если бы можно было сразу собирать в R выдачу и ее там анализировать?
+
+### 1. API для польского корпуса
+Для того, чтобы решить данную проблему я написал краулер (в этом мне немного помог **Даня Алексеевский**, спасибо!). Так что я написал на R достаточно неуклюжую, наверное, [функцию `pl_corpus`](https://github.com/agricolamz/lingcorpora/blob/master/pl.corpus.R).
+
+```{r pl_corpus --- краулер для польского корпуса, eval=FALSE, collapse=FALSE, include=FALSE}
+pl_corpus <- function(x, tag = F, n.results = 100, corpus = "nkjp300"){
+
+library(rvest)
+library(httr)
+library(xml2)
+
+if(length(x) != 1){
+  warning('x must be of length 1. If you want a dataframe with different queries try \n do.call("rbind.data.frame", sapply(x, pl_corpus, simplify = F))')
+}
+# show tags?
+if(tag == T){
+  tag.variable <- "slt"
+} else {tag.variable <- "s"}
+
+# set nkjp.pl settings
+settings <- httr::POST(url = "http://nkjp.pl/poliqarp/settings/",
+                 body = list(
+                    random_sample = "0",
+                    random_sample_size = "50",
+                    sort_column = "rm",
+                    sort_type = "afronte",
+                    sort_direction = "asc",
+                    show_in_match = tag.variable,
+                    show_in_context = tag.variable,
+                    left_context_width = "10",
+                    right_context_width = "10",
+                    wide_context_width = "50",
+                    results_per_page = as.character(n.results),
+                    `next` = "/poliqarp/"))
+
+# get request data
+request <- httr::POST(url = "http://nkjp.pl/poliqarp/query/",
+                body = list(query = x, corpus = corpus),
+                set_cookies(domain = "#HttpOnly_nkjp.pl",
+                            flag = "FALSE",
+                            path = "/",
+                            secure = "FALSE",
+                            expiration = "<NA>",
+                            name = "sessionid",
+                            value = as.character(settings$cookies[7]))) # cookies from settings
+
+# get data
+my.url <- httr::GET(url = "http://nkjp.pl/poliqarp/nkjp300/query/",
+              set_cookies(domain = "#HttpOnly_nkjp.pl",
+                          flag = "FALSE",
+                          path = "/",
+                          secure = "FALSE",
+                          expiration = "<NA>",
+                          name = "sessionid",
+                          value = as.character(request$cookies[7]))) # cookies from request
+
+# get left part
+xml2::read_html(my.url) %>% 
+  html_nodes("td:nth-child(2)") %>%
+  html_text() -> 
+  left.part
+left.part <- gsub("\\s+", " ", left.part) # clean data
+
+# get query word
+xml2::read_html(my.url) %>% 
+  html_nodes("td:nth-child(3)") %>%
+  html_text() -> 
+  center.part
+center.part <- gsub("\\s+", " ", center.part) # clean data
+
+# get right part
+xml2::read_html(my.url) %>% 
+  html_nodes("td:nth-child(4)") %>%
+  html_text() -> 
+  right.part
+right.part <- gsub("\\s+", " ", right.part) # clean data
+
+results <- data.frame(left.part, center.part, right.part, stringsAsFactors = F)
+return(results)}
+```
+
+Чтобы не заставлять читателя разбираться в коде, поясню, что в результате в вашем окружении появляется функция `pl_corpus` со следующими аргументами:
+
+* `x` --- запрос (обязательный аргумент);
+* `tag` --- логический вектор, отвечающий за то, нужны ли в выдачи морфологические теги или нет;
+* `n.results` --- переменная отвечающая за максимальное количество примеров в выдаче
+* `corpus` --- вектор, определяющий подкорпус, в котором следует искать (возможные значения: `"nkjp300"`, `"nkjp1800"`, `"nkjp1M"`, `"ipi250"`, `"ipi030"`, `"frequency-dictionary"`)
+
+Приведу пример работы функции:
+```{r использование pl_corpus 1, echo=TRUE, message=FALSE, warning=FALSE}
+head(pl_corpus("witam"), 3)
+```
+
+```{r использование pl_corpus 2, echo=TRUE, message=FALSE, warning=FALSE}
+head(pl_corpus("An*a", tag = T), 3)
+```
+```{r использование pl_corpus 3, echo=TRUE, message=FALSE, warning=FALSE}
+head(pl_corpus("[base = 'witać']"), 3)
+```
+Как видно из примеров, функция понимает самые разные запросы:
+
+* простые
+* регулярными выражениями
+* Corpus Query Language CQL
+
+### 2. Данные
+Данные о польских городах я взял из [Википедии](https://pl.wikipedia.org/wiki/Miasta_w_Polsce_(statystyki)). Были выбраны все города с населением больше 35500.
