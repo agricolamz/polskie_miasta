@@ -8,7 +8,7 @@ output: html_notebook
 [Национальный корпус польского языка](http://nkjp.pl/poliqarp/) --- вещь достаточно неудобная. Настройки в одном месте, выдача в другом, скачать можно только в html (хотя обещают, что можно и в Excel). Как было славно, если бы можно было сразу собирать в R выдачу и ее там анализировать?
 
 ### 1. API для польского корпуса
-Для того, чтобы решить данную проблему я написал краулер (в этом мне немного помог **Даня Алексеевский**, спасибо!). Так что я написал на R достаточно неуклюжую, наверное, [функцию `pl.corpus`](https://github.com/agricolamz/lingcorpora/blob/master/pl.corpus.R).
+Для того, чтобы решить данную проблему я написал API (в этом мне немного помог **Даня Алексеевский**, спасибо!). Так что я написал на R достаточно неуклюжую, наверное, [функцию `pl.corpus`](https://github.com/agricolamz/lingcorpora/blob/master/pl.corpus.R).
 
 ```{r pl.corpus --- API для польского корпуса, eval=FALSE, collapse=FALSE, include=FALSE}
 pl.corpus <- function(x, tag = F, n.results = 100, corpus = "nkjp300"){
@@ -217,9 +217,8 @@ df <- fread("moroz2016_polskie_miasta_row_data.csv", header = T)
 ```
 
 Создадим новый датафрейм с основами и падежом:
-```{r}
-library(dplyr)
-library(dtplyr)
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+library(dplyr); library(dtplyr)
 df %>% 
   mutate(base = pl.base(query)) %>% 
   mutate(case = pl.case(query)) %>% 
