@@ -1,7 +1,9 @@
 ---
 title: "Лингвистические пакеты в R: падежные предпочтения польских городов"
 author: "Г. Мороз, 21 октября 2016, [https://goo.gl/Wh0WUq](https://goo.gl/Wh0WUq)"
-output: html_notebook
+output:
+  html_notebook: default
+  github_document: default
 ---
 
 ### 0. Введение
@@ -212,13 +214,13 @@ pl.case("Wrocławia [Wrocław:subst:sg:gen:m3]")
 
 Для дальнейшего анализа понадобиться пакет `data.table`, который позволяет работать с бальшими файлами и пакет `dtplyr`, который позволяет удобно обрабатывать данные. Необработанные данные, которые будут дальше анализироваться можно скачать [здесь](https://goo.gl/M3BT4l).
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
-library(data.table)
+library(data.table); library(dtplyr)
 df <- fread("moroz2016_polskie_miasta_row_data.csv", header = T)
 ```
 
 Создадим новый датафрейм с основами и падежом:
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
-library(dplyr); library(dtplyr)
+library(tidyverse)
 df %>% 
   mutate(base = pl.base(query)) %>% 
   mutate(case = pl.case(query)) %>% 
@@ -231,7 +233,6 @@ head(base.case)
 
 Построим простой график:
 ```{r}
-library(ggplot2)
 base.case %>% 
   ggplot(aes(case, number))+
   geom_bar(stat = "identity", position = "dodge", fill = "lightblue")+
@@ -241,7 +242,6 @@ base.case %>%
 Для дальнейшей работы необходмо соединить изначальную базу (в переменной `miasta`) и новые данные (в переменной `base.case`).
 
 ```{r}
-library(tidyr)
 base.case %>% 
   spread(case, number) ->
   base.case
